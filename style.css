@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.header {
+  display: flex;
+  background-color: #f4f4f47c;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 4.8rem;
+}
+.logo {
+  width: 4.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.8rem;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.logo img {
+  width: 100%;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2.6rem;
+  font-size: 1.8rem;
+  align-items: center;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transition: all 0.2s;
+}
+.nav li a:hover {
+  color: #918f8f;
+}
+.main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 6rem;
+  text-align: center;
+}
+.backg-main {
+  display: flex;
+  justify-content: center;
+}
+.backg-main img {
+  filter: grayscale(0.2);
+  width: 150rem;
+  transition: all 0.5s;
+}
+.backg-main img:hover {
+  transform: scale(1.02);
+}
+.main-txt {
+  /* position: absolute; */
+  font-size: 4.8rem;
+  margin-bottom: 2.4rem;
+  cursor: pointer;
+  color: #00723a;
+}
+.btn-main {
+  font-size: 4.2rem;
+  cursor: pointer;
+  color: #492381;
+}
+.quote-fish {
+  background-color: #00723a;
+  padding: 6.4rem 30rem;
+  text-align: center;
+}
+.quote-fish p {
+  color: #f4f4f4;
+  font-size: 1.6rem;
+}
+.section-1,
+.section-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 7.2rem 4.8rem;
+  gap: 4.6rem;
+}
+.section-1-img,
+.section-2-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+.section-1-img img,
+.section-2-img img {
+  width: 100%;
+}
+
+.section-1-txt {
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-1-txt h3,
+.section-2-txt h3 {
+  font-size: 3.2rem;
+  color: #492381;
+  margin-bottom: 2.4rem;
+}
+.section-1-txt p,
+.section-2-txt p {
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
+  text-align: center;
+  font-weight: 500;
+}
+.section-2-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem 16rem;
+  text-align: center;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.section-3 h3 {
+  font-size: 3.2rem;
+  color: #492381;
+}
+.section-3 p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.stats {
+  background-color: #00723a;
+  color: white;
+  padding: 3.2rem 24rem;
+  text-align: start;
+  margin-bottom: 4.8rem;
+}
+.stats-container {
+  display: flex;
+  width: 100%;
+}
+.stats h3 {
+  font-size: 2.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.table-stats tr {
+  text-align: center;
+}
+.table-stats tr td {
+  font-size: 1.6rem;
+}
+.table-stats tr,
+.table-stats tr td {
+  padding: 1.2rem;
+}
+.stats-link {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 12rem;
+  gap: 2.4rem;
+}
+.stats-link h4 {
+  text-align: start;
+  font-size: 1.8rem;
+}
+.stats-link ol {
+  margin-left: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.stats-link li {
+  color: #f4f4f4;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.stats-link a {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  text-decoration: none;
+  color: #f4f4f4;
+  font-weight: 600;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+}
+.stats-link a:hover {
+  transform: scale(1.01);
+}
+.section-4 {
+  padding: 2.4rem 7.4rem;
+  margin-bottom: 4.8rem;
+}
+.section-4 h3 {
+  font-size: 2.4rem;
+  color: #492381;
+  margin-bottom: 1.4rem;
+}
+.section-4 p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 80%;
+}
+.section-4-components {
+  display: flex;
+  gap: 2.4rem;
+}
+.footer {
+  background-color: #f4f4f47c;
+  padding: 7.8rem;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer dl {
+  display: flex;
+  gap: 1.2rem;
+  grid-column: 1/2;
+  margin-bottom: 2.4rem;
+}
+.info-footer p {
+  margin-bottom: 1.6rem;
+}
+.info-footer ul {
+  margin-left: 1.6rem;
+}
+.info-footer a {
+  text-decoration: none;
+  color: rgb(61, 61, 61);
+}
+.info-footer a:hover {
+  text-decoration: none;
+  color: black;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.form label {
+  text-align: start;
+}
+.btn-sub {
+  background-color: #492381;
+  color: #f4f4f4;
+}
